@@ -12,7 +12,7 @@ function showMessage(value, user, userColor) {
 }
 
 function connect() {
-    client = Stomp.client(`ws://chat-2024-8bd98de6d104.herokuapp.com/chat`);
+    client = Stomp.client(`wss://chat-2024-8bd98de6d104.herokuapp.com/chat`);
     color = getRandomColor();
     client.connect({}, function (frame) {
         client.subscribe("/topic/messages", function (message) {
