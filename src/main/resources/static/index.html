@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Hello chat!!!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,6 +34,11 @@
             padding: 10px;
             box-sizing: border-box;
             margin-bottom: 10px;
+        }
+        @media (max-width: 575px) {
+            #user, #messageToSend, button {
+                margin-bottom: 5px;
+            }
         }
     </style>
 </head>
